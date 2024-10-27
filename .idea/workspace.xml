@@ -5,151 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82d71784-273f-423f-91dc-4440c585636c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/movie_project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/consumers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/css/as-alert-message.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/css/contact_us.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/css/e-ticket.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/css/jquery.seat-charts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/css/payment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/css/progress.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/css/seat-selection.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/css/sign-in.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/css/style-starter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/css/swiper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/css/ticket-booking.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/Harsh (2).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/Thaijase.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/a1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/a2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/a3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/a4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/a5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/avtar-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/banner3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/banner4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/bb.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/bharat.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/bharat1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/bharat2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/c1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/c2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/c3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/chavda.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/chavda1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/commando.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/commando2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/commando3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/cp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/ganesha.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/gk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/gujju2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/gujjubhai.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/gujjubhai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/kishan.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/ks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/ks1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/m1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/m10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/m11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/m12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/m2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/m3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/m4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/m5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/m6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/m7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/m8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/m9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/mid1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/mid2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/mid3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/mohen-jo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/n1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/n2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/n3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/n4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/n5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/n6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/reva.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/sarkar.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/sharvil.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/team1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/team2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/team3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/team4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/team5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/team6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/tzp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/images/wednesday.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/as-alert-message.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/barcode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/contact-us.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/e-ticket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/easyResponsiveTabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/jquery-1.11.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/jquery-1.9.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/jquery.countup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/jquery.nicescroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/jquery.seat-charts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/jquery.seat-charts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/jquery.waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/owl.carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/sign-in.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/swiper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/theme-change.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/assets/js/ticket-booking.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/seat_selection/css/jquery.seat-charts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/seat_selection/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/seat_selection/images/banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/seat_selection/js/jquery-1.11.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/seat_selection/js/jquery.nicescroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/seat_selection/js/jquery.seat-charts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/seat_selection/js/jquery.seat-charts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/seat_selection/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/seat_selection/js/theme-change-seat-sel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/seat_selection/seat_sel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/e-ticket.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/ticket-booking.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_project/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_project/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_project/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_project/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_project/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +42,7 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/XuLyAnh/movie_project/app/static",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -245,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729881269863</updated>
-      <workItem from="1729881277128" duration="40996000" />
+      <workItem from="1729881277128" duration="41855000" />
     </task>
     <servers />
   </component>
