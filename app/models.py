@@ -17,10 +17,10 @@ class Movie(models.Model):
     genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
     duration = models.IntegerField()  # in minutes
     description = models.TextField()
-    image_ava = models.TextField(default='https://cinema.momocdn.net/img/76909001427055070-rkbse0ifgemkVtJKm7qWKy0vqj5.jpg')
-    image_cover = models.TextField(default='https://cinema.momocdn.net/img/76909001873562492-AaYdXkEqExgG66p55J677Qnagpf.jpg')
-    trailer = models.TextField(default='https://www.youtube.com/embed/0HY6QFlBzUY?autoplay=1')
-    status = models.CharField(max_length=20, default='now_showing')
+    image_ava = models.TextField()
+    image_cover = models.TextField()
+    trailer = models.TextField()
+    status = models.CharField()
 
     def __str__(self):
         return self.title
@@ -28,7 +28,6 @@ class Movie(models.Model):
 
 class Room(models.Model):
     name = models.CharField(max_length=100)
-    capacity = models.IntegerField()
 
     def __str__(self):
         return self.name
@@ -36,7 +35,8 @@ class Room(models.Model):
 
 class Screening(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
-    screening_time = models.DateTimeField()
+    screening_date = models.DateField(null=True, blank=True)
+    screening_time = models.TimeField(null=True, blank=True)
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
 
     def __str__(self):
@@ -46,7 +46,8 @@ class Screening(models.Model):
 class Seat(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
     seat_number = models.CharField(max_length=10)  # e.g., A1, B2, etc.
-    status = models.CharField(max_length=50, default='available')  # available, reserved, booked
+    status = models.CharField(max_length=50)  # available, booked
+    ticket_price = models.DecimalField(max_digits=6, decimal_places=2)
 
     def __str__(self):
         return f"{self.seat_number} in {self.room.name}"

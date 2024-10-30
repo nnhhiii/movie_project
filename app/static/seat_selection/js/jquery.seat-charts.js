@@ -317,8 +317,9 @@
 		//Generate default row ids unless user passed his own
 		settings.naming.rows = settings.naming.rows || (function (length) {
 			var rows = [];
-			for (var i = 1; i <= length; i++) {
-				rows.push(i);
+			for (var i = 0; i < length; i++) {
+				// Sử dụng ký tự ASCII cho hàng (A, B, C, ...)
+				rows.push(String.fromCharCode(65 + i)); // 65 là mã ASCII cho 'A'
 			}
 			return rows;
 		})(settings.map.length);
@@ -351,61 +352,43 @@
 		}
 
 		fn.append($headerRow);
-
+		function getId(character, row, column) {
+			// Thay đổi cách tính ID thành A1, A2, ...
+			return String.fromCharCode(65 + row) + (column + 1); // 65 là mã ASCII cho 'A'
+		}
 		//do this for each map row
 		$.each(settings.map, function (row, characters) {
-
 			var $row = $('<div></div>').addClass('seatCharts-row');
 
 			if (settings.naming.left) {
+				// Sử dụng String.fromCharCode để hiển thị chữ cái A, B, C...
 				$row.append(
 					$('<div></div>')
-					.addClass('seatCharts-cell seatCharts-space')
-					.text(settings.naming.rows[row])
+						.addClass('seatCharts-cell seatCharts-space')
+						.text(String.fromCharCode(65 + row)) // Hiển thị hàng từ A, B, C, ...
 				);
 			}
 
-			/*
-			 * Do this for each seat (letter)
-			 *
-			 * Now users will be able to pass custom ID and label which overwrite the one that seat would be assigned by getId and
-			 * getLabel
-			 *
-			 * New format is like this:
-			 * a[ID,label]a[ID]aaaaa
-			 *
-			 * So you can overwrite the ID or label (or both) even for just one seat.
-			 * Basically ID should be first, so if you want to overwrite just label write it as follows:
-			 * a[,LABEL]
-			 *
-			 * Allowed characters in IDs areL 0-9, a-z, A-Z, _
-			 * Allowed characters in labels are: 0-9, a-z, A-Z, _, ' ' (space)
-			 *
-			 */
-
 			$.each(characters.match(/[a-z_]{1}(\[[0-9a-z_]{0,}(,[0-9a-z_ ]+)?\])?/gi), function (column, characterParams) {
 				var matches = characterParams.match(/([a-z_]{1})(\[([0-9a-z_ ,]+)\])?/i),
-					//no matter if user specifies [] params, the character should be in the second element
 					character = matches[1],
-					//check if user has passed some additional params to override id or label
 					params = typeof matches[3] !== 'undefined' ? matches[3].split(',') : [],
-					//id param should be first
 					overrideId = params.length ? params[0] : null,
-					//label param should be second
 					overrideLabel = params.length === 2 ? params[1] : null;
 
 				$row.append(character != '_' ?
-					//if the character is not an underscore (empty space)
 					(function (naming) {
-
-						//so users don't have to specify empty objects
 						settings.seats[character] = character in settings.seats ? settings.seats[character] : {};
 
-						var id = overrideId ? overrideId : naming.getId(character, naming.rows[row], naming.columns[column]);
+						// Sử dụng hàm getId để tạo ID ghế
+						var id = overrideId ? overrideId : getId(character, row, column);
+
+						// Sử dụng ID cho nhãn hiển thị
+						var label = overrideLabel ? overrideLabel : id;
+
 						seats[id] = new seat({
 							id: id,
-							label: overrideLabel ?
-								overrideLabel : naming.getLabel(character, naming.rows[row], naming.columns[column]),
+							label: label, // Hiển thị ID ghế (A1, A2, ...)
 							row: row,
 							column: column,
 							character: character
@@ -415,7 +398,6 @@
 						return seats[id].node();
 
 					})(settings.naming) :
-					//this is just an empty space (_)
 					$('<div></div>').addClass('seatCharts-cell seatCharts-space')
 				);
 			});

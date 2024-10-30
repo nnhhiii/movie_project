@@ -15,8 +15,9 @@ router.register(r'bookings', views.BookingViewSet)
 urlpatterns = [
     path('api/', include(router.urls)),
     path('', views.index, name='index'),
-    path('login/', login_view, name='login'),
-    path('logout/', logout_view, name='logout')
+    path('booking', views.booking, name='booking'),
+    path('login', login_view, name='login'),
+    path('logout', logout_view, name='logout')
 ]
 
 

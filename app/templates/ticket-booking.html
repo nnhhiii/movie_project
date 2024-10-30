@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -5,23 +6,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ticket Booking</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style-starter.css">
+  <link rel="stylesheet" type="text/css" href={% static "assets/css/style-starter.css" %}>
   <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/progress.css">
-
-  <link rel="stylesheet" type="text/css" href="assets/css/ticket-booking.css">
-
+  <link rel="stylesheet" type="text/css" href={% static "assets/css/progress.css"%}>
+  <link rel="stylesheet" type="text/css" href={% static "assets/css/ticket-booking.css"%}>
   <!-- ..............For progress-bar............... -->
-  <link rel="stylesheet" type="text/css" href="assets/css/e-ticket.css">
-
-  <link rel="stylesheet" type="text/css" href="assets/css/payment.css" />
+  <link rel="stylesheet" type="text/css" href={% static "assets/css/e-ticket.css"%}>
+  <link rel="stylesheet" type="text/css" href={% static "assets/css/payment.css" %}/>
   <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700" rel="stylesheet">
 </head>
 
 <body>
   <header id="site-header" class="w3l-header fixed-top">
-
-    <!--/nav-->
     <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
       <div class="container">
         <h1><a class="navbar-brand" href="index.html"><span class="fa fa-play icon-log" aria-hidden="true"></span>
@@ -60,45 +56,18 @@
         <div class="px-0 pt-4 pb-0 mt-3 mb-3">
           <form id="form">
             <ul id="progressbar" class="progressbar-class">
-              <li class="active" id="step1">Show timing selection</li>
-              <li id="step2" class="not_active">Seat Selection</li>
-              <li id="step3" class="not_active">Payment</li>
-              <li id="step4" class="not_active">E-Ticket</li>
+              <li class="active" id="step1">Lịch chiếu</li>
+              <li id="step2" class="not_active">Chọn ghế</li>
+              <li id="step3" class="not_active">Thanh toán</li>
+              <li id="step4" class="not_active">Mã vé</li>
             </ul>
             <br>
             <fieldset>
               <div id="screen-select-div">
-                <h2>Show time Selection</h2>
+                <h2>Lịch chiếu</h2>
                 <div class="carousel carousel-nav" data-flickity='{"contain": true, "pageDots": false }'>
-                  <div class="carousel-cell" id="1" onclick="myFunction(1)">
-                    <div class="date-numeric">13</div>
-                    <div class="date-day">Today</div>
-                  </div>
 
-                  <div class="carousel-cell" id="2" onclick="myFunction(2)">
-                    <div class="date-numeric">14</div>
-                    <div class="date-day">Tomorrow</div>
-                  </div>
-                  <div class="carousel-cell" id="3" onclick="myFunction(3)">
-                    <div class="date-numeric">15</div>
-                    <div class="date-day">Monday</div>
-                  </div>
-                  <div class="carousel-cell" id="4" onclick="myFunction(4)">
-                    <div class="date-numeric">16</div>
-                    <div class="date-day">Tuesday</div>
-                  </div>
-                  <div class="carousel-cell" id="5" onclick="myFunction(5)">
-                    <div class="date-numeric">17</div>
-                    <div class="date-day">Wednesday</div>
-                  </div>
-                  <div class="carousel-cell" id="6" onclick="myFunction(6)">
-                    <div class="date-numeric">18</div>
-                    <div class="date-day">Thursday</div>
-                  </div>
-                  <div class="carousel-cell" id="7" onclick="myFunction(7)">
-                    <div class="date-numeric">19</div>
-                    <div class="date-day">Friday</div>
-                  </div>
+
                 </div>
                 <ul class="time-ul">
                   <li class="time-li">
@@ -106,96 +75,20 @@
                       Screen 1
                     </div>
                     <div class="time-btn">
-                      <button class="screen-time" onclick="timeFunction()">
-                        1:05 PM
-                      </button>
-                      <button class="screen-time" onclick="timeFunction()">
-                        4:00 PM
-                      </button>
-                      <button class="screen-time" onclick="timeFunction()">
-                        9:00 PM
-                      </button>
-                    </div>
-                  </li>
-                  <li class="time-li">
-                    <div class="screens">
-                      Screen 2
-                    </div>
-                    <div class="time-btn">
-                      <button class="screen-time" onclick="timeFunction()">
-                        3:00 PM
-                      </button>
-                    </div>
-                  </li>
-                  <li class="time-li">
-                    <div class="screens">
-                      Screen 3
-                    </div>
-                    <div class="time-btn">
-                      <button class="screen-time" onclick="timeFunction()">
-                        9:05 AM
-                      </button>
-                      <button class="screen-time" onclick="timeFunction()">
-                        10:00 PM
-                      </button>
-                    </div>
-                  </li>
-                  <li class="time-li">
-                    <div class="screens">
-                      Screen 4
-                    </div>
-                    <div class="time-btn">
-                      <button class="screen-time" onclick="timeFunction()">
-                        9:05 AM
-                      </button>
-                      <button class="screen-time" onclick="timeFunction()">
-                        11:00 AM
-                      </button>
-                      <button class="screen-time" onclick="timeFunction()">
-                        3:00 PM
-                      </button>
-                      <button class="screen-time" onclick="timeFunction()">
-                        7:00 PM
-                      </button>
-                      <button class="screen-time" onclick="timeFunction()">
-                        10:00 PM
-                      </button>
-                      <button class="screen-time" onclick="timeFunction()">
-                        11:00 PM
-                      </button>
-                    </div>
-                  </li>
-                  <li class="time-li">
-                    <div class="screens">
-                      Screen 5
-                    </div>
-                    <div class="time-btn">
-                      <button class="screen-time" onclick="timeFunction()">
-                        9:05 AM
-                      </button>
-                      <button class="screen-time" onclick="timeFunction()">
-                        12:00 PM
-                      </button>
-                      <button class="screen-time" onclick="timeFunction()">
-                        1:00 PM
-                      </button>
-                      <button class="screen-time" onclick="timeFunction()">
-                        3:00 PM
-                      </button>
-                    </div>
-                  </li>
 
+
+                    </div>
+                  </li>
                 </ul>
               </div>
-              <input id="screen-next-btn" type="button" name="next-step" class="next-step" value="Continue Booking"
+              <input id="screen-next-btn" type="button" name="next-step" class="next-step" value="Tiếp tục"
                 disabled />
             </fieldset>
             <fieldset>
-
               <div>
                 <iframe id="seat-sel-iframe"
                   style="  box-shadow: 0 14px 12px 0 var(--theme-border), 0 10px 50px 0 var(--theme-border); width: 800px; height: 550px; display: block; margin-left: auto; margin-right: auto;"
-                  src="seat_selection/seat_sel.html"></iframe>
+                  src={% static "seat_selection/seat_sel.html" %}></iframe>
               </div>
               <br>
               <input type="button" name="next-step" class="next-step" value="Proceed to Payment" />
@@ -273,9 +166,9 @@
                   </div>
                 </div>
               </div>
-              <input type="button" name="next-step" class="next-step pay-btn" value="Confirm Payment" />
-              <input type="button" name="previous-step" class="cancel-pay-btn" value="Cancel Payment"
-                onclick="location.href='index.html';" />
+              <input type="button" name="next-step" class="next-step pay-btn" value="Xác nhận thanh toán" />
+              <input type="button" name="previous-step" class="cancel-pay-btn" value="Quay lại"
+                 onclick="window.history.back()" />
             </fieldset>
             <fieldset>
               <h2>E-Ticket</h2>
@@ -477,29 +370,112 @@
   </div>
 </body>
 <script>
-  let prevId = "1";
+    window.onload = function () {
+        load_date()
+        const date = new Date();
+        const screening_date = date.getFullYear() + '-' +
+            String(date.getMonth() + 1).padStart(2, '0') + '-' +
+            String(date.getDate()).padStart(2, '0'); // Định dạng YYYY-MM-DD
+        load_screeningTime(screening_date)
+        document.getElementById("screen-next-btn").disabled = true;
+    }
+// Thiết lập sự kiện click bên ngoài các nút .screen-time
+    document.addEventListener("click", function(event) {
+        if (!event.target.classList.contains("screen-time")) {
+            document.getElementById("screen-next-btn").disabled = true;
+        }
+    });
 
-  window.onload = function () {
-    document.getElementById("screen-next-btn").disabled = true;
-  }
+</script>
+<script>
+    let prevId = null; // Đặt mặc định là null
+    const today = new Date();
 
-  function timeFunction() {
-    document.getElementById("screen-next-btn").disabled = false;
-  }
+    // Hàm hiển thị các ngày
+    function load_date() {
+        for (let i = 0; i < 5; i++) {
+            const date = new Date();
+            date.setDate(today.getDate() + i);
 
-  function myFunction(id) {
-    document.getElementById(prevId).style.background = "rgb(243, 235, 235)";
-    document.getElementById(id).style.background = "#df0e62";
-    prevId = id;
-  }
+            const day = date.toLocaleDateString("vi-VN", { weekday: "long" });
+            const dayNumeric = date.getDate();
+            const screening_date = date.getFullYear() + '-' +
+            String(date.getMonth() + 1).padStart(2, '0') + '-' +
+            String(dayNumeric).padStart(2, '0'); // Định dạng YYYY-MM-DD
+
+            // Tạo phần tử HTML cho mỗi ngày
+            const dayHTML = `
+                <div class="carousel-cell" id="day-${i}" onclick="selectDate('${screening_date}', 'day-${i}')">
+                    <div class="date-numeric">${dayNumeric}</div>
+                    <div class="date-day">${i === 0 ? "Hôm nay" : day}</div>
+                </div>`;
+            $('.carousel-nav').append(dayHTML);
+        }
+    }
+
+    function selectDate(screening_date, id) {
+        if (prevId) {
+            document.getElementById(prevId).style.background = "rgb(243, 235, 235)"; // Xóa màu nền của ngày trước
+        }
+        document.getElementById(id).style.background = "#df0e62"; // Đặt màu nền cho ngày được chọn
+        prevId = id;
+
+        load_screeningTime(screening_date);
+    }
+
+    function getParameterByName(name) {
+        const url = window.location.href;
+        const nameRegex = name.replace(/[\[\]]/g, '\\$&');
+        const regex = new RegExp('[?&]' + nameRegex + '(=([^&#]*)|&|#|$)');
+        const results = regex.exec(url);
+        return results ? decodeURIComponent(results[2].replace(/\+/g, ' ')) : null;
+    }
+
+    function load_screeningTime(screening_date) {
+        const movie_id = getParameterByName('movie_id');
+
+        $.ajax({
+            url: `/api/screenings/?movie_id=${movie_id}&screening_date=${screening_date}`,
+            method: 'GET',
+            success: function(screenings) {
+                if (screenings.length > 0) {
+                    $('.time-btn').empty(); // Xóa hết dữ liệu cũ
+                    $.each(screenings, function (index, screening) {
+                        let screeningHTML = `
+                            <button class="screen-time" onclick="selectScreeningTime(${screening.id}, ${screening.room})">
+                                ${screening.screening_time}
+                            </button>`;
+                        $('.time-btn').append(screeningHTML);
+                    });
+                }else{
+                    $('.time-btn').empty();
+                    $('.time-btn').append('<p>Không tìm thấy lịch chiếu cho ngày này.</p>');
+                }
+            },
+            error: function(error) {
+                console.error('Error', error);
+            }
+        });
+    }
+
+    function selectScreeningTime(screening_id, room_id) {
+        document.getElementById("screen-next-btn").disabled = false;
+        selectedScreeningId = screening_id;
+        selectedRoomId = room_id;
+        console.log(room_id);
+        localStorage.setItem('selectedRoomId', selectedRoomId);
+    }
+
+
+
 </script>
 
 <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
 <script type="text/javascript" src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'>
 </script>
 <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src="assets/js/theme-change.js"></script>
+<script src={% static "assets/js/theme-change.js"%}></script>
 
-<script type="text/javascript" src="assets/js/ticket-booking.js"></script>
+<script type="text/javascript" src={% static "assets/js/ticket-booking.js" %}></script>
 
 </html>
