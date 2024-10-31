@@ -76,7 +76,7 @@
 								<div class="browse-items">
 									<h3 class="hny-title two mt-md-5 mt-4">Browse all:</h3>
 									<ul class="search-items">
-										<li><a href="movies.html">Action</a></li>
+
 									</ul>
 								</div>
 							</div>
@@ -86,6 +86,29 @@
 						<!--/search-right-->
 
 					</div>
+					 <script>
+        function load_genre() {
+            $.ajax({
+                url: 'api/genre/',
+                method: 'GET',
+                success: function(genres) {
+                    if (genres.length > 0) {
+                        $.each(genres, function (index, genre) {
+                            let genreHTML = `
+                            <li><a href="movies.html">${genre.genre_name}</a></li>
+                            `;
+                            $('.search-items').append(genreHTML);
+
+                        });
+
+                    }
+                },
+                error: function(error) {
+                    console.error('Error', error);
+                }
+            });
+        }
+    </script>
 					<div class="Login_SignUp" id="login"
 						style="font-size: 2rem ; display: inline-block; position: relative;">
 						<!-- <li class="nav-item"> -->
@@ -465,6 +488,7 @@
 <script src={%static "assets/js/bootstrap.min.js" %}></script>
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
+    load_genre();
         loadTrailer_nowShowing();
         loadMovie_nowShowing();
         loadMovie_coming_soon();
