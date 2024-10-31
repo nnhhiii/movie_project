@@ -6,6 +6,7 @@ from .views import login_view, logout_view, MovieViewSet
 
 router = DefaultRouter()
 router.register(r'users', views.UserViewSet)
+router.register(r'genre', views.GenreViewSet)
 router.register(r'movies', views.MovieViewSet)
 router.register(r'rooms', views.RoomViewSet)
 router.register(r'screenings', views.ScreeningViewSet)

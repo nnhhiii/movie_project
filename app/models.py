@@ -12,6 +12,9 @@ class User(models.Model):
 class Genre(models.Model):
     genre_name = models.CharField(max_length=255)
 
+    def __str__(self):
+        return self.genre_name
+
 class Movie(models.Model):
     title = models.CharField(max_length=255)
     genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
